@@ -32,14 +32,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Invalid password
             echo "<script>
                     alert('Invalid password. Please try again.');
-                    window.location.href='../login.html';
+                    window.location.href='../index.html';
                   </script>";
         }
     } else {
         // No user found with the provided email
         echo "<script>
                 alert('No user found with that email address.');
-                window.location.href='../login.html';
+                window.location.href='../index.html';
               </script>";
     }
 

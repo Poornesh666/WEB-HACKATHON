@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } else {
             echo "<script>
                     alert('Error: " . $stmt->error . "');
-                    window.location.href='../email_form.html'; // Adjust path as needed
+                    window.location.href='../index.html'; // Adjust path as needed
                   </script>";
         }
         $stmt->close();
