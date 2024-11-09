@@ -354,19 +354,7 @@ opacity: 0.5;
 .customer-quote{
   max-width: 90%;
 }
-/* footer icons */
-.footer{
-background: var(--mainBlack);
-}
-.footer-icon{
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: var(--mainYellow);
-  transition: all 1s ease-in-out;
-}
-.footer-icon:hover{
-  color: var(--mainBlue);
-}
+
 .logDetails{
   width: 120px;
   display: flex;
@@ -374,6 +362,22 @@ background: var(--mainBlack);
   flex-direction: row;
   gap: 10%;
 }
+
 a:hover {
   text-decoration: none;
+}
+
+.footer {
+  padding: 15px 0;
+  position: fixed;
+
+  width: 100%;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: var(--mainWhite);
+  font-family: Arial, sans-serif;
+  font-weight: 500;
 }
