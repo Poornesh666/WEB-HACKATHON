@@ -367,17 +367,3 @@ a:hover {
   text-decoration: none;
 }
 
-.footer {
-  padding: 15px 0;
-  position: fixed;
-
-  width: 100%;
-  text-align: center;
-}
-
-.footer-text {
-  font-size: 14px;
-  color: var(--mainWhite);
-  font-family: Arial, sans-serif;
-  font-weight: 500;
-}
