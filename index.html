@@ -24,7 +24,7 @@
   <div class="preloader d-flex justify-content-center align-items-center">
     <img src="img/preloader.gif" alt="preloader">
   </div>
-
+  
 
   <!-- end preloader -->
   <!-- nav element -->
@@ -37,7 +37,13 @@
         <i class="fas fa-bars"></i>
       </span>
     </button>
-    <!--  -->
+
+    <select name="services" id="service" onchange="location = this.value;">
+      <option value="#">Click here for more services!</option>
+      <option value="./forms/complaint-form.html">Raise a complaint</option>
+      <option value="./forms/warrenty-claim.html">Warrenty claim</option>
+    </select>    
+
     <div class="collapse navbar-collapse" id="myNav">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item active">
@@ -649,11 +655,11 @@
   </section>
   <!--end of  quotes section -->
   <!-- footer -->
-  <footer class="footer">
+  <div class="footer">
     <p class="footer-text">
         ©2024-Web Hackathon SJT-G01 & G02 (146, 205, 206, 140, 190)
     </p>
-  </footer>
+  </div>
 
 
 

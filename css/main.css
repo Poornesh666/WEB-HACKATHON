@@ -367,3 +367,31 @@ a:hover {
   text-decoration: none;
 }
 
+.footer{
+  text-align: center;
+  background-color: var(--mainBlack);
+  color: var(--mainWhite);
+  position: fixed;
+  left: 0; 
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+}
+
+#service {
+  font-size: 16px;
+  padding: 10px;
+  background-color: var(--mainBlack);
+  color: var(--mainWhite);
+  border: 1px solid var(--mainWhite);
+  border-radius: 5px;
+  cursor: pointer;
+  width: 250px;
+}
+
+#service option {
+  padding: 10px;
+  background-color: var(--mainBlack);
+  color: var(--mainWhite);
+  border: 1px solid var(--mainWhite);
+}
