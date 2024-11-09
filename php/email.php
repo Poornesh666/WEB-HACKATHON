@@ -1,6 +1,5 @@
 <?php
-require_once './db_config.php'; // Ensure the path to db_config.php is correct
-
+require_once './db_config.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
 
@@ -8,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         echo "<script>
                 alert('Invalid email format. Please try again.');
-                window.location.href='../email_form.html'; // Adjust path as needed
+                window.location.href='../index.html';
               </script>";
         exit;
     }
@@ -22,19 +21,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($stmt->execute()) {
             echo "<script>
                     alert('Email submitted successfully!');
-                    window.location.href='../index.html'; // Redirect to the home page or a success page
+                    window.location.href='../index.html';
                   </script>";
         } else {
             echo "<script>
                     alert('Error: " . $stmt->error . "');
-                    window.location.href='../index.html'; // Adjust path as needed
+                    window.location.href='../index.html';
                   </script>";
         }
         $stmt->close();
     } else {
         echo "<script>
                 alert('Error: " . $conn->error . "');
-                window.location.href='../email_form.html'; // Adjust path as needed
+                window.location.href='../index.html';
               </script>";
     }
 

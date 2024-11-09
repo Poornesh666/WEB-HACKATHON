@@ -1,5 +1,5 @@
 <?php
-require_once './db_config.php'; // Ensure the path is correct based on your project structure
+require_once './db_config.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];

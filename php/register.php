@@ -1,5 +1,5 @@
 <?php
-require_once './db_config.php'; // Ensure the path is correct based on your project structure
+require_once './db_config.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
@@ -52,11 +52,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($stmt->execute()) {
             echo "<script>alert('Registration successful!'); window.location.href='../index.html';</script>";
         } else {
-            echo "<script>alert('Error: " . $stmt->error . "'); window.location.href='../register.html';</script>";
+            echo "<script>alert('Error: " . $stmt->error . "'); window.location.href='../index.html';</script>";
         }
         $stmt->close();
     } else {
-        echo "<script>alert('Error: " . $conn->error . "'); window.location.href='../register.html';</script>";
+        echo "<script>alert('Error: " . $conn->error . "'); window.location.href='../index.html';</script>";
     }
 
     $conn->close();
