@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submit Complaint</title>
+    <link rel="stylesheet" href="../css/forms.css">
+    <script src="../js/complaint.js" defer></script>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Submit Complaint</h2>
+        <form action="../php/complaint.php" method="post">
+            <div class="form-group">
+                <label for="customer-name">Full Name:</label>
+                <input type="text" id="customer-name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="customer-phone">Phone:</label>
+                <input type="number" id="customer-phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="customer-email">Email:</label>
+                <input type="email" id="customer-email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="vehicle-model">Vehicle Model:</label>
+                <input type="text" id="vehicle-model" name="vehicleModel" required>
+            </div>
+            <div class="form-group">
+                <label for="vehicle-year">Vehicle Year:</label>
+                <input type="number" id="vehicle-year" name="vehicleYear" required min="1900" max="2024">
+            </div>
+            <div class="form-group">
+                <label for="complaint-type">Complaint Type:</label>
+                <select id="complaint-type" name="complaintType" required>
+                    <option value="">Select Type</option>
+                    <option value="service">Service Related</option>
+                    <option value="product">Product Related</option>
+                    <option value="staff">Staff Behavior</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="complaint-details">Complaint Details:</label>
+                <textarea id="complaint-details" name="complaintDetails" required rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn">Submit Complaint</button>
+        </form>
+    </div>
+</body>
+</html>
